@@ -1,16 +1,25 @@
 {
   "name": "easy-code-tool-cli",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "Easy-code-tool-cli",
   "type": "module",
-  "main": "./lib/index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
   "scripts": {
     "dev": "node --trace-warnings --loader ts-node/esm  ./lib/index.js",
     "test": "node --trace-warnings --loader ts-node/esm  ./dist/index.umd.cjs",
     "build": "vite build",
     "publish": "npm publish ."
   },
-
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abernethy-BY/Easy-code-tool-cli.git"
@@ -18,7 +27,7 @@
   "keywords": [
     "By"
   ],
-  "bin": "./lib/index.js",
+  "bin": "./dist/index.js",
   "author": "Abernethy-By",
   "license": "ISC",
   "bugs": {
