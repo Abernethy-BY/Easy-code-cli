@@ -2,11 +2,12 @@
  * @Author: Bianyu by15242952083@outlook.com
  * @Date: 2023-07-05 14:08:07
  * @LastEditors: Bianyu by15242952083@outlook.com
- * @LastEditTime: 2023-07-05 15:30:53
+ * @LastEditTime: 2023-07-05 16:17:09
  * @FilePath: \Easy-code-cli\index.ts
  * @Description:
  * Copyright (c) 2023 by Bianyu email: by15242952083@outlook.com, All Rights Reserved.
  */
+
 import input from '@inquirer/input'
 
 import consola from 'consola'
