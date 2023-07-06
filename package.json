@@ -1,16 +1,16 @@
 {
   "name": "easy-code-tool-cli",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "description": "Easy-code-tool-cli",
   "type": "module",
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "scripts": {
-    "dev": "node --trace-warnings --loader ts-node/esm  ./lib/index.js",
-    "test": "node --trace-warnings --loader ts-node/esm  ./dist/index.umd.cjs",
+    "dev": "node  ./index.js",
+    "test-dev": "node --trace-warnings --loader ts-node/esm  ./lib/index.js",
+    "test-dist": "node --trace-warnings --loader ts-node/esm  ./dist/index.umd.cjs",
     "build": "vite build",
     "publish": "npm publish ."
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abernethy-BY/Easy-code-tool-cli.git"
@@ -18,7 +18,7 @@
   "keywords": [
     "By"
   ],
-  "bin": "./lib/index.js",
+  "bin": "./index.js",
   "author": "Abernethy-By",
   "license": "ISC",
   "bugs": {
@@ -31,7 +31,8 @@
     "@inquirer/input": "^1.2.3",
     "@inquirer/prompts": "^2.3.0",
     "consola": "^3.2.2",
-    "events": "^3.3.0",
+    "js-yaml": "^4.1.0",
+    "mongoose": "^7.3.1",
     "rollup-plugin-node-polyfills": "^0.2.1"
   },
   "devDependencies": {
