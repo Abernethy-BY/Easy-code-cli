@@ -9,4 +9,4 @@
 -->
 Easy-code-cli
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Abernethy-BY/Easy-code-cli.git)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Abernethy-BY/Easy-code-cli.git/dev)

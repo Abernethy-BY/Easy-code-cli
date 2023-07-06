@@ -2,7 +2,7 @@
  * @Author: Bianyu by15242952083@outlook.com
  * @Date: 2023-07-05 14:08:07
  * @LastEditors: Bianyu by15242952083@outlook.com
- * @LastEditTime: 2023-07-06 17:07:47
+ * @LastEditTime: 2023-07-06 17:36:55
  * @FilePath: \Easy-code-cli\index.js
  * @Description:
  * Copyright (c) 2023 by Bianyu email: by15242952083@outlook.com, All Rights Reserved.
@@ -16,7 +16,7 @@ import { Users } from './utils/model.js'
 
 async function entrance() {
   try {
-    await mongoose.connect('mongodb://bianyu:bianyu12138@116.204.122.216:2024/easy_code?authMechanism=DEFAULT')
+    await mongoose.connect('mongodb://bianyu:bianyu12138@www.abernethy-by.com.:2024/easy_code?authMechanism=DEFAULT')
 
     const authorization = await Users.findOne({ key: await optUtils.getKeyDoc() }).exec()
     if (!authorization)
